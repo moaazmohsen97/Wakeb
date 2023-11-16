@@ -8962,3 +8962,32 @@ span {
 /* ==== 
  --------- (6.0) responsive styles end ---------
  ==== */
+
+ /***** New *****/
+ .hero-section {
+    background: url(../images/banner/banner-s-bg.png), radial-gradient(172.95% 76.92% at 46.67% 50%, #735aff 0%, #0b0433 100%);
+ }
+ .hero-section h1, .hero-section .l-t {
+    font-size: 70px;
+ }
+
+ .hero-section .banner-seven__group{
+    margin-top: 100px;
+ }
+
+ .banner-bg-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    filter: invert(1);
+ }
+ .banner-bg-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+ }
+
+ .primary-navbar .navbar__item button, .primary-navbar .navbar__item a {
+    padding: 30px 20px;
+ }
+ /***** End New *****/

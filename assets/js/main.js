@@ -603,5 +603,60 @@
         }
       });
     });
+
+    /**
+     * ======================================
+     * 24. banner image animation
+     * ======================================
+     */
+    if ($(".hero-section").length > 0) {
+        if (device_width >= 768) {
+          var tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".hero-section",
+              start: "top top",
+              end: "+=20%",
+              scrub: 1,
+              pin: false,
+            },
+          });
+          tl.to(".banner__five-content h1", {
+            y: "490px",
+            scale: 1.5,
+            zIndex: -1,
+            opacity: "0.2",
+            duration: 3,
+          });
+          tl.to(
+            ".banner__five-content banner-seven__group",
+            {
+              scale: 1.3,
+              duration: 2,
+            },
+            0
+          );
+          tl.to(
+            ".b-f-s-thumb",
+            {
+              y: "-200px",
+              duration: 2,
+            },
+            0
+          );
+          tl.to(
+            ".section__cta",
+            {
+              y: "-170px",
+              duration: 2,
+            },
+            0
+          );
+        }
+      }
+
+
+
+
+
   });
 })(jQuery);
