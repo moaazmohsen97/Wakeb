@@ -2904,8 +2904,8 @@ span {
   z-index: -1;
 }
 .banner-seven .banner-seven__thumb img {
-  /* max-width: 40vw; */
-  width: 18rem;
+  max-width: 40vw;
+  /* width: 18rem; */
 }
 
 .h-seven-text-wrapper {
