@@ -8999,4 +8999,97 @@ span {
  .primary-navbar .navbar__item button, .primary-navbar .navbar__item a {
     padding: 30px 20px;
  }
+
+ .offcanvas-info{
+    width: auto;
+ }
+ .offcanvas-info .offcanvas-info__intro h4,
+ .offcanvas-info .offcanvas-info__content h5,
+ .offcanvas-info .offcanvas-info__form h5,
+ .offcanvas-info .offcanvas-info__footer p,
+ .offcanvas-info .offcanvas-info__content li a,
+ .offcanvas-info .offcanvas-info__footer a{
+    color: #fff;
+}
+.offcanvas-info .offcanvas-info__content li a:hover{
+    color: #fafafa;
+}
+
+.offcanvas-info .offcanvas-info__content li::before,
+.subscribe-form button,
+.subscribe-form input,
+.offcanvas-info .close-offcanvas-info{
+    background-color: #fff;
+}
+
+.subscribe-form input{
+    color: var(--quaternary-color);
+}
+
+.custom-tabs{
+    background-color: transparent !important;
+    gap: 75px !important;
+}
+
+.custom-tabs.nav-pills .nav-link{
+    background-color: #8f208a;
+    padding: 28px 40px 28px 50px;
+    position: relative;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.custom-tabs.nav-pills .nav-link:before{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -50px;
+    top: 0;
+    border-radius: 50em;
+    font-family: bootstrap-icons!important;
+    background-color: #fff;
+    color: #11044c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.custom-tabs.nav-pills .nav-link:nth-child(1)::before{
+    content: "\F1B6";
+}
+.custom-tabs.nav-pills .nav-link:nth-child(2)::before{
+    content: "\F538";
+}
+.custom-tabs.nav-pills .nav-link:nth-child(3)::before{
+    content: "\F822";
+}
+
+.custom-tabs.nav-pills .nav-link.active{
+    background-color: var(--primary-color);
+}
+
+.custom-tabs.nav-pills .nav-link.active:before{
+    background-image: linear-gradient(140deg, var(--primary-color) 0%, #8f218b 100%);
+    color: #fff;
+}
+
+.footer .footer__nav-list ul{
+    align-items: start;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.footer .footer__nav-list h6{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.footer-alter .footer__nav a {
+    font-size: 1rem;
+}
+.footer-alter .footer__nav a img{
+    max-width: 200px;
+}
  /***** End New *****/
