@@ -395,7 +395,7 @@ p span {
 }
 
 .title-animation {
-  text-transform: lowercase !important;
+  text-transform: capitalize !important;
 }
 
 .title-animation > div > div:first-child {
@@ -411,7 +411,9 @@ p span {
   -webkit-text-fill-color: inherit;
   background: inherit;
 }
-
+.banner-seven__content h1 {
+  line-height: 80px;
+}
 /* ==== 
  --------- (2.02) typography styles end ---------
  ==== */
@@ -1841,26 +1843,30 @@ span {
   gap: 8px;
   width: 100%;
   max-width: 360px;
+  position: relative;
 }
 .subscribe-form input {
   flex-grow: 1;
-  padding: 22px 20px;
+  padding: 20px 20px;
   background-color: var(--quaternary-color);
-  border-radius: 40px;
+  border-radius: 10px;
   color: var(--white);
   width: calc(100% - 70px);
 }
 .subscribe-form button {
   width: 70px;
   min-width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  height: 45px;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--quaternary-color);
-  color: var(--primary-color);
+  background-color: var(--quaternary-color) !important;
+  background-image: linear-gradient(140deg, #11044c 0%, #8f208a 100%);
+  color: var(--white) !important;
   font-size: 24px;
+  position: absolute;
+  right: 12px;
 }
 
 /* ==== 
@@ -2011,6 +2017,12 @@ span {
   .ctn-preloader .animation-preloader .txt-loading span {
     font-size: 20px;
   }
+  .pricing .section__header .section__content-cta {
+    margin-left: 37px;
+  }
+  .custom-tabs.nav-pills .nav-link {
+    padding: 15px 17px 15px 50px !important;
+  }
 }
 /* ==== 
  --------- (3.03) preloader styles end ---------
@@ -2031,7 +2043,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  /* gap: 60px; */
   flex-wrap: wrap;
 }
 .primary-navbar .navbar__menu {
@@ -3129,9 +3141,15 @@ span {
 .footer .footer__nav-list a:hover {
   color: var(--primary-color) !important;
 }
+.footer__content {
+  padding: 40px 0;
+}
 .footer .footer__copyright {
   padding: 40px 0px;
-  border-top: 1px solid #302e3f;
+  border-top-color: 0.2px solid #b1b0b669;
+}
+.footer .footer__copyright .footer__copyright-content p{
+  text-align: center;
 }
 .footer .footer__copyright-social {
   display: flex;
@@ -3250,16 +3268,15 @@ span {
 }
 .footer-alter .footer-alter__content h2 {
   color: var(--white);
-  max-width: 290px;
+  max-width:321px;
 }
 .footer-alter .footer-alter__content .offcanvas-info__form {
   flex-grow: 1;
 }
 .footer-alter .footer-alter__content .offcanvas-info__form input {
-  border-radius: 330px;
-  border: 1px solid rgba(41, 44, 50, 0.19);
-  background: rgba(255, 255, 255, 0.33);
-  color: var(--white);
+  padding: 20px 20px;
+  border-radius: 10px;
+  width: calc(100% - 70px);
 }
 .footer-alter .thumber {
   position: absolute;
@@ -3280,7 +3297,8 @@ span {
   color: #191b1a;
 }
 .footer-alter .footer__copyright {
-  border-top-color: rgba(25, 27, 26, 0.1254901961) !important;
+  border-top: 0.2px solid #b1b0b669;
+  
 }
 .footer-alter .footer__copyright p {
   color: var(--theme-color);
@@ -3298,8 +3316,9 @@ span {
 .footer-alter .footer__copyright a:hover {
   color: #191b1a;
 }
-
+/* inear-gradient(0deg, rgba(3,0,21,1) 0%, rgba(18,15,35,1) 15%, rgba(18,15,35,0.865983893557423) 85%, rgba(18,15,35,1) 100%); */
 .footer-seven {
+  background: linear-gradient(0deg, rgba(18,15,35) 0%, rgb(3 0 21) 100%);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top right -80%;
@@ -3361,7 +3380,7 @@ span {
   color: #191b1a;
 }
 .footer-seven .footer__copyright {
-  padding: 60px 0px;
+  padding: 14px 0px;
 }
 .footer-seven .material-symbols-outlined{
   color: var(--white);
@@ -3804,6 +3823,7 @@ span {
 
 .sponsor__slider .sponsor__single{
   width: 200px !important;
+  background-color: white;
 }
 
 .service-slider {
@@ -4076,6 +4096,7 @@ span {
   border-radius: 5px;
   padding: 10px;
   background-color: var(--tertiary-color);
+  width: 95%;
 }
 .pricing .section__header button {
   padding: 8px 40px;
@@ -5661,7 +5682,8 @@ span {
 }
 
 .h-empower {
-  background-color: #120f23;
+  /* background-color: #120f23; */
+  background: linear-gradient(0deg, rgba(3,0,21,0.3) 0%, rgba(18,15,35,1) 15%, rgba(18,15,35,1) 85%, rgba(3,0,21,0.3) 100%);
   position: relative;
   z-index: 1;
   overflow-x: clip;
@@ -6203,7 +6225,7 @@ span {
   padding-left: 6px;
 }
 .b-details .latest-post-wrapper {
-  margin-top: 24px;
+  /* margin-top: 24px; */
 }
 .b-details .latest-post-wrapper .latest-post-single {
   display: flex;
@@ -8676,8 +8698,8 @@ span {
 @media only screen and (max-width: 575.98px) {
   h1,
   .light-title {
-    font-size: 26px;
-    line-height: 40px;
+    font-size: 26px !important;
+    line-height: 40px !important;
   }
   .light-title-sm,
   .light-title-xs {
@@ -9032,11 +9054,11 @@ span {
 }
 
 .custom-tabs.nav-pills .nav-link{
-    background-color: #8f208a;
-    padding: 28px 40px 28px 50px;
+    background-color: var(--white);
+    padding: 15px 40px 15px 50px;
     position: relative;
     border-radius: 10px;
-    color: #fff;
+    color: var(--black);
 }
 
 .custom-tabs.nav-pills .nav-link:before{
@@ -9044,7 +9066,7 @@ span {
     width: 80px;
     height: 80px;
     left: -50px;
-    top: 0;
+    top: -12px;
     border-radius: 50em;
     font-family: bootstrap-icons!important;
     background-color: #fff;
@@ -9065,15 +9087,29 @@ span {
     content: "\F822";
 }
 
-.custom-tabs.nav-pills .nav-link.active{
-    background-color: var(--primary-color);
+
+.custom-tabs.nav-pills .price-btn-active#pills-home-tab.nav-link {
+  background-color: var(--primary-color);
+  color: var(--white);
 }
+.custom-tabs.nav-pills .price-btn-active#pills-profile-tab.nav-link {
+  
+  background-color: #8f208a; 
+  color: var(--white);
+}
+.custom-tabs.nav-pills .price-btn-active#pills-contact-tab.nav-link {
+  background-color: #11044c;
+  color: var(--white);
+}
+
 
 .custom-tabs.nav-pills .nav-link.active:before{
-    background-image: linear-gradient(140deg, var(--primary-color) 0%, #8f218b 100%);
-    color: #fff;
+    /* background-image: linear-gradient(140deg, var(--primary-color) 0%, #8f218b 100%); */
+    /* color: #fff; */
 }
-
+.footer .footer__nav-list {
+  margin-top: 35px;
+}
 .footer .footer__nav-list ul{
     align-items: start;
     gap: 16px;
