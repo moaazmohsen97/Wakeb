@@ -1231,7 +1231,7 @@
         ScrollTrigger.create({
           trigger: ".s-details",
           start: "top top",
-          end: "bottom top+=" + (metaElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (metaElement?.clientHeight + nullPadding),
           pin: metaElement,
           pinSpacing: false,
           id: "l",
@@ -1241,7 +1241,7 @@
         ScrollTrigger.create({
           trigger: ".s-details",
           start: "top top",
-          end: "bottom top+=" + (sidebarElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (sidebarElement?.clientHeight + nullPadding),
           pin: sidebarElement,
           pinSpacing: false,
           id: "r",
@@ -1270,7 +1270,7 @@
         ScrollTrigger.create({
           trigger: ".b-details",
           start: "top top",
-          end: "bottom top+=" + (metaElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (metaElement?.clientHeight + nullPadding),
           pin: metaElement,
           pinSpacing: false,
           id: "e",
@@ -1280,7 +1280,7 @@
         ScrollTrigger.create({
           trigger: ".b-details",
           start: "top top",
-          end: "bottom top+=" + (sidebarElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (sidebarElement?.clientHeight + nullPadding),
           pin: sidebarElement,
           pinSpacing: false,
           id: "f",
@@ -1309,7 +1309,7 @@
         ScrollTrigger.create({
           trigger: ".shop",
           start: "top top",
-          end: "bottom top+=" + (metaElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (metaElement?.clientHeight + nullPadding),
           pin: metaElement,
           pinSpacing: false,
           id: "e",
@@ -1319,7 +1319,7 @@
         ScrollTrigger.create({
           trigger: ".shop",
           start: "top top",
-          end: "bottom top+=" + (sidebarElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (sidebarElement?.clientHeight + nullPadding),
           pin: sidebarElement,
           pinSpacing: false,
           id: "f",
@@ -1348,7 +1348,7 @@
         ScrollTrigger.create({
           trigger: ".case-details__content",
           start: "top top+=180px",
-          end: "bottom top+=" + (metaElement.clientHeight + 180),
+          end: "bottom top+=" + (metaElement?.clientHeight + 180),
           pin: metaElement,
           pinSpacing: false,
           id: "e",
@@ -1358,7 +1358,7 @@
         ScrollTrigger.create({
           trigger: ".case-details__content",
           start: "top top",
-          end: "bottom top+=" + (sidebarElement.clientHeight + nullPadding),
+          end: "bottom top+=" + (sidebarElement?.clientHeight + nullPadding),
           pin: sidebarElement,
           pinSpacing: false,
           id: "f",
